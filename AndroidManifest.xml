@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.example.splitv6"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk
+		android:minSdkVersion="16"
+		android:targetSdkVersion="19" />
+
+	<application
+		android:allowBackup="true"
+		android:label="@string/app_name"
+		android:icon="@drawable/ic_launcher"
+		android:theme="@style/SplitActionBarTheme"
+		android:name="com.example.splitv6.controller.SplitApplication" >
+		<activity
+			android:name=".activities.MainActivity"
+			android:label="@string/title_activity_main"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action
+					android:name="android.intent.action.MAIN" />
+
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".activities.CriarNovoEventoActivity"
+			android:label="@string/title_activity_criar_novo_evento"
+			android:screenOrientation="portrait"
+			android:parentActivityName=".activities.MainActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.example.splitv6.activities.MainActivity" />
+		</activity>
+		<activity
+			android:name=".activities.EventoActivity"
+			android:label="@string/title_activity_evento"
+			android:screenOrientation="portrait" >
+		</activity>
+		<activity
+			android:name=".activities.CadastrarPessoaActivity"
+			android:label="@string/title_activity_cadastrar_pessoa"
+			android:screenOrientation="portrait"
+			android:parentActivityName=".activities.EventoActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.example.splitv6.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.CadastrarProdutoActivity"
+			android:label="@string/title_activity_cadastrar_produto"
+			android:screenOrientation="portrait"
+			android:parentActivityName=".activities.EventoActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.example.splitv6.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VincularProdutoPessoasActivity"
+			android:label="@string/title_activity_vindular_produto_pessoas"
+			android:screenOrientation="portrait"
+			android:parentActivityName=".activities.CadastrarProdutoActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.example.splitv6.activities.CadastrarProdutoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VerContaActivity"
+			android:label="@string/title_activity_ver_conta"
+			android:screenOrientation="portrait"
+			android:parentActivityName=".activities.EventoActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.example.splitv6.activities.EventoActivity" />
+		</activity>
+		<activity
+			android:name=".activities.VerContaPessoaActivity"
+			android:label="@string/title_activity_ver_conta_pessoa"
+			android:parentActivityName=".activities.VerContaActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.example.splitv6.activities.VerContaActivity" />
+		</activity>
+		<activity
+			android:name="com.example.splitv6.activities.VerContaPessoaProdutoActivity"
+			android:label="@string/title_activity_ver_conta_pessoa_produto"
+			android:parentActivityName=".activities.VerContaPessoaActivity" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.example.splitv6.activities.VerContaPessoaActivity" />
+		</activity>
+	</application>
+
+</manifest>

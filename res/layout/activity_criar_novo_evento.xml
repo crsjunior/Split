@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.splitv6.activities.CriarNovoEventoActivity" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:layout_below="@+id/layout_titulo" >
+
+		<TextView
+			android:id="@+id/textview_crie_novo_evento"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/act_criar_novo_evento_textview_crie_evento" />
+
+		<EditText
+			android:id="@+id/edittext_nome_evento"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textview_crie_novo_evento"
+			android:layout_marginTop="30dp"
+			android:hint="@string/act_criar_novo_evento_edittext_nome_evento_hint"
+			android:inputType="textCapWords" />
+
+		<LinearLayout
+			android:id="@+id/button_criar_evento"
+			style="@style/button_quadrado_esquerda"
+			android:layout_below="@+id/edittext_nome_evento"
+			android:onClick="onClick" >
+
+			<ImageView
+				style="@style/button_quadrado_imageview"
+				android:src="@drawable/novo_evento" />
+
+			<TextView
+				style="@style/button_quadrado_textview"
+				android:text="@string/act_criar_novo_evento_button_criar_evento" />
+		</LinearLayout>
+
+		<!-- <Button -->
+		<!-- android:id="@+id/button_criar_evento" -->
+		<!-- android:layout_width="fill_parent" -->
+		<!-- android:layout_height="wrap_content" -->
+		<!-- android:layout_below="@+id/edittext_nome_evento" -->
+		<!-- android:layout_marginTop="30dp" -->
+		<!-- android:onClick="onClick" -->
+		<!-- android:text="@string/act_criar_novo_evento_button_criar_evento" /> -->
+
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">+$plitV6</string>
+	<string name="title_activity_main">+$plitV6</string>
+	<string name="title_activity_criar_novo_evento">Criar Novo Evento</string>
+	<string name="title_activity_evento">Central do Evento</string>
+	<string name="title_activity_cadastrar_pessoa">Cadastro de pessoa</string>
+	<string name="title_activity_cadastrar_produto">Cadastro de produto</string>
+	<string name="title_activity_vindular_produto_pessoas">Cadastro de produto</string>
+	<string name="title_activity_ver_conta">Resumo da conta</string>
+	<string name="title_activity_ver_conta_pessoa">Resumo da conta por pessoa</string>
+	<string name="title_activity_ver_conta_pessoa_produto">Resumo da conta por pessoa</string>
+	<string name="action_settings">Cancelar evento</string>
+
+	<!-- de uso global -->
+	<string name="nome_app">$plit</string>
+
+	<!-- activity_criar_novo_evento -->
+	<string name="act_criar_novo_evento_textview_crie_evento">Crie um novo evento</string>
+	<string name="act_criar_novo_evento_edittext_nome_evento_hint">Nome do evento</string>
+	<string name="act_criar_novo_evento_button_criar_evento">Avançar</string>
+
+	<!-- activity_evento -->
+	<string name="act_evento_label_nome_evento">Evento:</string>
+	<string name="act_evento_button_cadastro_pessoa">Adicionar pessoa</string>
+	<string name="act_evento_button_cadastro_produto">Adicionar produto</string>
+	<string name="act_evento_button_exibir_pessoas">Exibir pessoas</string>
+	<string name="act_evento_button_exibir_produtos">Exibir produtos</string>
+	<string name="act_evento_label_qtd_pessoas">Total de pessoas:</string>
+	<string name="act_evento_label_qtd_produtos">Total de produtos:</string>
+	<string name="act_evento_label_total_parcial">Valor parcial:</string>
+	<string name="act_evento_button_ver_conta">Ver conta</string>
+
+	<!-- activity_cadastrar_pessoa -->
+	<string name="act_cadastrar_pessoa_edittext_nome_pessoa_hint">Nome da pessoa</string>
+	<string name="act_cadastrar_pessoa_button_enviar_cadastro">Concluir cadastro</string>
+	<!-- activity_cadastrar_produto -->
+	<string name="act_cadastrar_produto_edittext_nome_produto_hint">Nome do produto</string>
+	<string name="act_cadastrar_produto_edittext_preco_produto_hint">Preço do produto</string>
+	<string name="act_cadastrar_produto_button_vincular_pessoas">Vincular pessoas</string>
+	<string name="act_cadastrar_produto_label_qtd_pessoas_vinculadas">Pessoas vinculadas:</string>
+	<string name="act_cadastrar_produto_button_enviar_cadastro">Concluir cadastro</string>
+
+	<!-- activity_vincular_produto_pessoas -->
+	<string name="act_vincular_produto_pessoas_button_concluido">Finalizar e voltar</string>
+
+	<!-- activity_ver_conta -->
+	<string name="act_ver_conta_button_voltar">Voltar</string>
+	<string name="act_ver_conta_button_encerrar">Encerrar conta</string>
+
+	<!-- listview_ver_conta -->
+	<string name="listview_ver_conta_label_qtd_produtos_vinculados">Produtos consumidos:</string>
+	<string name="listview_ver_conta_label_total_conta">Total a pagar:</string>
+
+	<!-- listview_ver_conta_pessoa -->
+	<string name="listview_ver_conta_pessoa_label_qtd_pessoas_vinculadas">Pessoas que consumiram:</string>
+	<string name="listview_ver_conta_pessoa_label_preco_produto_por_pessoa">Valor por pessoa:</string>
+
+	<!-- layout_cabecalho_split -->
+	<string name="layout_cabecalho_split_titulo_s">$</string>
+	<string name="layout_cabecalho_split_titulo_plit">plit</string>
+
+	<!-- de uso do NavigationDrawer -->
+	<string-array name="drawer_items">
+		<item>Início</item>
+		<item>Histórico</item>
+		<item>Ajuda</item>
+		<item>Sobre</item>
+	</string-array>
+	<string-array name="drawer_titles">
+		<item>$plit</item>
+		<item>Histórico</item>
+		<item>Ajuda</item>
+		<item>Sobre</item>
+	</string-array>
+
+	<string name="drawer_open">Open drawer</string>
+	<string name="drawer_close">Close drawer</string>
+	<string name="drawer_title">$plit - Menu</string>
+
+	<!-- fragment_main -->
+	<string name="textview_bem_vindo">Bem-Vindo ao $plit</string>
+	<string name="button_criar_evento">INICIAR UM NOVO EVENTO</string>
+
+	<!-- fragment_historico -->
+	<string name="texto_historico">
+<![CDATA[
+		<html><head>
+			<style type=\"text/css\">
+				html, body { background-color: transparent; }
+				div { font-size: large; text-align: center; color: red; }
+			</style>
+		</head><body>
+		<div>Histórico do usuário do $plit</div>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Funcionalidade <strong>em desenvolvimento</strong>.</p>
+		</body></html>
+]]>
+	</string>
+	<!-- fragment_ajuda -->
+	<string name="texto_ajuda">
+<![CDATA[
+		<html><head>
+			<style type=\"text/css\">
+				html, body { background-color: transparent; }
+				div { font-size: large; text-align: center; color: red; }
+			</style>
+		</head><body>
+		<div>Ajuda do $plit</div>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;Funcionalidade <strong>em desenvolvimento</strong>.</p>
+		</body></html>
+]]>
+	</string>
+
+	<!-- fragment_sobre -->
+	<string name="texto_sobre">
+<![CDATA[
+		<html><head>
+			<style type=\"text/css\">
+				html, body { background-color: transparent; }
+				div { font-size: large; text-align: center; color: red; }
+			</style>
+		</head><body>
+		<div>Sobre o $plit</div>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;<i>$plit</i> é um aplicativo para gerenciar a divisão de uma conta com os amigos.
+		<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Conteúdo <strong>em construção</strong>.</p>
+		</body></html>
+]]>
+	</string>
+
+	<!-- action labels para o action button do teclado -->
+	<string name="button_cirar_evento_action_label">Criar</string>
+
+	<!-- OUTRAS STRING UTILIZADAS DENTRO DO CODIGO -->
+	<string name="vincluar_produto_pessoas_dialog_titulo">Você fez alterações...</string>
+	<string name="vincluar_produto_pessoas_dialog_mensagem">Confirme o que deseja fazer?</string>
+	<string name="vincluar_produto_pessoas_dialog_botao_positivo">Salvar</string>
+	<string name="vincluar_produto_pessoas_dialog_botao_negativo">Descartar</string>
+
+</resources>

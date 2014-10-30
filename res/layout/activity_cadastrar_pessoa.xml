@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.splitv6.activities.CadastrarPessoaActivity" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<TextView
+		android:id="@+id/textView_status"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layout_titulo"
+		android:gravity="center_horizontal"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:textColor="#a0ff0000"
+		android:visibility="invisible" />
+
+	<!-- scroll view para telas que nao comportam todo o conteudo -->
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/textView_status" >
+
+		<!-- layout do conteudo -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp" >
+
+			<!-- campo nome da pessoa -->
+
+			<EditText
+				android:id="@+id/edittext_nome_pessoa"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:hint="@string/act_cadastrar_pessoa_edittext_nome_pessoa_hint"
+				android:inputType="textCapWords" />
+
+			<!-- botao enviar cadastro da pessoa -->
+
+			<Button
+				android:id="@+id/button_enviar_cadastro_pessoa"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/button_normal_amarelo"
+				android:layout_below="@+id/edittext_nome_pessoa"
+				android:layout_marginTop="40dp"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="#a0000000"
+				android:onClick="onClick"
+				android:text="@string/act_cadastrar_pessoa_button_enviar_cadastro" />
+		</RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>

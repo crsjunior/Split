@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout para uma linha (row) da ListView utilizada para vincular pessoas a um produto. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<!-- nome da pessoa -->
+
+	<TextView
+		android:id="@+id/textview_nome_pessoa"
+		style="@style/listview_vincular_texto"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="0.7"
+		android:layout_marginLeft="5dp"
+		android:layout_gravity="center_vertical"
+		android:gravity="center_vertical"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:singleLine="true"
+		android:ellipsize="end" />
+
+	<!-- botao para vincular uma pessoa ao produto -->
+	<!-- obs: foi concebido desta maneira para melhor centralizar a imagem dentro do botao, que eh muito pequeno -->
+
+	<RelativeLayout
+		android:id="@+id/button_vincular_pessoa"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_gravity="center" >
+
+		<ImageView
+			android:id="@+id/imageview_button_vincular_pessoa"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@drawable/button_vincular_produto_pessoas_2"
+			android:scaleType="center" />
+	</RelativeLayout>
+
+</LinearLayout>

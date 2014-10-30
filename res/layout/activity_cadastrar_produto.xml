@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.splitv6.activities.CadastrarProdutoActivity" >
+
+	<include
+		android:id="@+id/layout_titulo"
+		layout="@layout/layout_cabecalho_split" />
+
+	<!-- scroll view para telas que nao comportam todo o conteudo -->
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_titulo" >
+
+		<!-- layout do conteudo -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp" >
+
+			<!-- campo nome do produto -->
+
+			<EditText
+				android:id="@+id/edittext_nome_produto"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:hint="@string/act_cadastrar_produto_edittext_nome_produto_hint"
+				android:inputType="textCapWords" />
+
+			<!-- campo preco do produto -->
+
+			<EditText
+				android:id="@+id/edittext_preco_produto"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/edittext_nome_produto"
+				android:layout_marginTop="20dp"
+				android:hint="@string/act_cadastrar_produto_edittext_preco_produto_hint"
+				android:inputType="numberDecimal" />
+
+			<!-- botao vinvular pessoas ao produto -->
+
+			<LinearLayout
+				android:id="@+id/button_vincular_pessoas"
+				style="@style/button_horizontal"
+				android:background="@drawable/button_normal_verde"
+				android:layout_below="@+id/edittext_preco_produto"
+				android:layout_marginTop="20dp"
+				android:onClick="onClick_vincularPessoas" >
+
+				<ImageView
+					style="@style/button_horizontal_imageview"
+					android:src="@drawable/add_friends_2" />
+
+				<TextView
+					style="@style/button_horizontal_textview"
+					android:text="@string/act_cadastrar_produto_button_vincular_pessoas" />
+
+				<TextView
+					style="@style/button_horizontal_textview"
+					android:layout_marginLeft="5dp"
+					android:textColor="#40000000"
+					android:text="(" />
+
+				<TextView
+					android:id="@+id/button_vincular_pessoas_textview"
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="#70000000"
+					android:text="5" />
+
+				<TextView
+					style="@style/button_horizontal_textview"
+					android:textColor="#40000000"
+					android:text=")" />
+			</LinearLayout>
+
+			<!-- informacao de quantidade de pessoas vinculadas ao produto -->
+
+<!-- 			<LinearLayout -->
+<!-- 				android:id="@+id/layout_qtd_pessoas_vinculadas" -->
+<!-- 				android:layout_width="fill_parent" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				android:layout_below="@+id/button_vincular_pessoas" -->
+<!-- 				android:layout_marginTop="10dp" -->
+<!-- 				android:gravity="center" -->
+<!-- 				android:orientation="horizontal" > -->
+
+<!-- 				<TextView -->
+<!-- 					android:layout_width="wrap_content" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:text="@string/act_cadastrar_produto_label_qtd_pessoas_vinculadas" /> -->
+
+<!-- 				<TextView -->
+<!-- 					android:id="@+id/textview_qtd_pessoas_vinculadas" -->
+<!-- 					android:layout_width="wrap_content" -->
+<!-- 					android:layout_height="wrap_content" -->
+<!-- 					android:layout_marginLeft="5dp" /> -->
+<!-- 			</LinearLayout> -->
+
+			<!-- botao enviar cadastro do produto -->
+
+			<Button
+				android:id="@+id/button_enviar_cadastro_produto"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/button_normal_amarelo"
+				android:layout_below="@+id/button_vincular_pessoas"
+				android:layout_marginTop="40dp"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="#a0000000"
+				android:onClick="onClick_enviarCadastroProduto"
+				android:text="@string/act_cadastrar_produto_button_enviar_cadastro" />
+		</RelativeLayout>
+	</ScrollView>
+
+</RelativeLayout>
